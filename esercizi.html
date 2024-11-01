@@ -1,0 +1,2805 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e173647d3.js" crossorigin="anonymous"></script>
+    <title>Esercizi</title>
+    <link rel="stylesheet" href="css/styleSheet.css">
+    <script src="js/esercizi.js"></script>
+    <script src="js/cacciaTesoro.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(img/sfondo2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar iniziale-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Math&GeometryHelper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">Calcolatrice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="geometry.html">Geometria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="esercizi.html">Esercizi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bibliotecaDigitale.html">Biblioteca Digitale</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--SEZIONE TITOLO-->
+
+    <div class="container" id="titoloEsercizi">
+    <br />
+        <h1>ESERCIZI</h1>
+        <br />
+        <hr />
+        <p>Completa tutti gli esercizi e raggiungi il massimo punteggio</p>
+
+        <!--SEZIONE ESERCIZI-->
+        <!--INIZIO ACCORDION MATEMATICA-->
+
+        <div class="accordion" id="accordionExample">
+
+            <!--TAG DI APERTURA ACCORDION-->
+
+            <div class="accordion-item">
+
+                <!--TAG DIV APERTURA TAB ESERCIZI MATEMATICA-->
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ESERCIZI DI MATEMATICA
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <!--SEZIONE CARD ESERCIZI MATEMATICA "*ALL'INTERNO DELL'ACCORDION BODY*"-->
+                        <div class="esercizi1">
+
+                            <div class="totalcard1">
+                                <!--CONTENITORE DI TUTTE LE CARD ESERCIZI 1-->
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 1</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è il valore di x se x +3 = 7 - x+3=7?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr1" id="r1">
+                                            <label class="form-check-label" for="r1">
+                                                a) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr2" id="r2">
+                                            <label class="form-check-label" for="r2">
+                                                b) 5
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr3" id="r3">
+                                            <label class="form-check-label" for="r3">
+                                                c) 6
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr4" id="r4">
+                                            <label class="form-check-label" for="r4">
+                                                d) 3
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica1()">Verifica</button>
+
+                                        <p id="output1"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 2</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Se 2 moltiplicato per x = 8, quanto vale x?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr5" id="r5">
+                                            <label class="form-check-label" for="r5">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr6" id="r6">
+                                            <label class="form-check-label" for="r6">
+                                                b) 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr7" id="r7">
+                                            <label class="form-check-label" for="r7">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr8" id="r8">
+                                            <label class="form-check-label" for="r8">
+                                                d) 5
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica2()">Verifica</button>
+
+                                        <p id="output2"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 3</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto vale x se x - 5 = 3
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr9" id="r9">
+                                            <label class="form-check-label" for="r9">
+                                                a) 6
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr10" id="r10">
+                                            <label class="form-check-label" for="r10">
+                                                b) 7
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr11" id="r11">
+                                            <label class="form-check-label" for="r11">
+                                                c) 8
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr12" id="r12">
+                                            <label class="form-check-label" for="r12">
+                                                d) 9
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica3()">Verifica</button>
+
+                                        <p id="output3"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 4</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è il doppio di 6?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr13" id="r13">
+                                            <label class="form-check-label" for="r13">
+                                                a) 12
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr14" id="r14">
+                                            <label class="form-check-label" for="r14">
+                                                b) 14
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr15" id="r15">
+                                            <label class="form-check-label" for="r15">
+                                                c) 10
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr16" id="r16">
+                                            <label class="form-check-label" for="r16">
+                                                d) 8
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica4()">Verifica</button>
+
+                                        <p id="output4"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 5</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto fa 10 + 10?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr17" id="r17">
+                                            <label class="form-check-label" for="r17">
+                                                a) 30
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr18" id="r18">
+                                            <label class="form-check-label" for="r18">
+                                                b) 20
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr19" id="r19">
+                                            <label class="form-check-label" for="r19">
+                                                c) 40
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr20" id="r20">
+                                            <label class="form-check-label" for="r20">
+                                                d) 10
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica5()">Verifica</button>
+
+                                        <p id="output5"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 6</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Trova il valore di x nella seguente equazione x+4=10
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr21" id="r21">
+                                            <label class="form-check-label" for="r21">
+                                                a) 6
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr22" id="r22">
+                                            <label class="form-check-label" for="r22">
+                                                b) 5
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr23" id="r23">
+                                            <label class="form-check-label" for="r23">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr24" id="r24">
+                                            <label class="form-check-label" for="r24">
+                                                d) 7
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica6()">Verifica</button>
+
+                                        <p id="output6"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 7</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto fa 16 &divide; 2?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr25" id="r25">
+                                            <label class="form-check-label" for="r25">
+                                                a) 8
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr26" id="r26">
+                                            <label class="form-check-label" for="r26">
+                                                b) 6
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr27" id="r27">
+                                            <label class="form-check-label" for="r27">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr28" id="r28">
+                                            <label class="form-check-label" for="r28">
+                                                d) 10
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica7()">Verifica</button>
+
+                                        <p id="output7"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 8</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è il valore di y nella seguente equazione 5 x y = 15?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr29" id="r29">
+                                            <label class="form-check-label" for="r29">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr30" id="r30">
+                                            <label class="form-check-label" for="r30">
+                                                b) 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr31" id="r31">
+                                            <label class="form-check-label" for="r31">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr32" id="r32">
+                                            <label class="form-check-label" for="r32">
+                                                d) 5
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica8()">Verifica</button>
+
+                                        <p id="output8"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 9</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è il valore di x nella seguente equazione x-2 = 4?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr33" id="r33">
+                                            <label class="form-check-label" for="r33">
+                                                a) 6
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr34" id="r34">
+                                            <label class="form-check-label" for="r34">
+                                                b) 8
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr35" id="r35">
+                                            <label class="form-check-label" for="r35">
+                                                c) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr36" id="r36">
+                                            <label class="form-check-label" for="r36">
+                                                d) 4
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica9()">Verifica</button>
+
+                                        <p id="output9"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 10</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Se 3+𝑥=7, quanto vale x?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr37" id="r37">
+                                            <label class="form-check-label" for="r37">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr38" id="r38">
+                                            <label class="form-check-label" for="r38">
+                                                b) 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr39" id="r39">
+                                            <label class="form-check-label" for="r39">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr40" id="r40">
+                                            <label class="form-check-label" for="r40">
+                                                d) 5
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica10()">Verifica</button>
+
+                                        <p id="output10"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 11</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto fa 24 &divide; 2?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr41" id="r41">
+                                            <label class="form-check-label" for="r41">
+                                                a) 10
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr42" id="r42">
+                                            <label class="form-check-label" for="r42">
+                                                b) 12
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr43" id="r43">
+                                            <label class="form-check-label" for="r43">
+                                                c) 15
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr44" id="r44">
+                                            <label class="form-check-label" for="r44">
+                                                d) 8
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica11()">Verifica</button>
+
+                                        <p id="output11"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 12</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Se 𝑥+y =10  quanto vale x e quanto vale y?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr45" id="r45">
+                                            <label class="form-check-label" for="r45">
+                                                a) 4+2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr46" id="r46">
+                                            <label class="form-check-label" for="r46">
+                                                b) 5+6
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr47" id="r47">
+                                            <label class="form-check-label" for="r47">
+                                                c) 5+5
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr48" id="r48">
+                                            <label class="form-check-label" for="r48">
+                                                d) 7+2
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica12()">Verifica</button>
+
+                                        <p id="output12"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 13</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto fa 4+𝑥=9?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr49" id="r49">
+                                            <label class="form-check-label" for="r49">
+                                                a) 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr50" id="r50">
+                                            <label class="form-check-label" for="r50">
+                                                b) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr51" id="r51">
+                                            <label class="form-check-label" for="r51">
+                                                c) 5
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr52" id="r52">
+                                            <label class="form-check-label" for="r52">
+                                                d) 7
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica13()">Verifica</button>
+
+                                        <p id="output13"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 14</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto vale 𝑥 se 10−𝑥=6?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr53" id="r53">
+                                            <label class="form-check-label" for="r53">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr54" id="r54">
+                                            <label class="form-check-label" for="r54">
+                                                b) 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr55" id="r55">
+                                            <label class="form-check-label" for="r55">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr56" id="r56">
+                                            <label class="form-check-label" for="r56">
+                                                d) 5
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica14()">Verifica</button>
+
+                                        <p id="output14"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 15</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è il valore di 𝑥 se 𝑥 &divide; 2 = 6?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr57" id="r57">
+                                            <label class="form-check-label" for="r57">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr58" id="r58">
+                                            <label class="form-check-label" for="r58">
+                                                b) 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr59" id="r59">
+                                            <label class="form-check-label" for="r59">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr60" id="r60">
+                                            <label class="form-check-label" for="r56">
+                                                d) 5
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica15()">Verifica</button>
+
+                                        <p id="output15"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 16</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Se 𝑥=4  quanto vale 𝑥+𝑥?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr61" id="r61">
+                                            <label class="form-check-label" for="r61">
+                                                a) 6
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr62" id="r62">
+                                            <label class="form-check-label" for="r62">
+                                                b) 8
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr63" id="r63">
+                                            <label class="form-check-label" for="r63">
+                                                c) 10
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="64" id="r64">
+                                            <label class="form-check-label" for="r64">
+                                                d) 12
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica16()">Verifica</button>
+
+                                        <p id="output16"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 17</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Se  𝑥 − 3=1, qual è il valore di x?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr65" id="r65">
+                                            <label class="form-check-label" for="r65">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr66" id="r66">
+                                            <label class="form-check-label" for="r66">
+                                                b) 1
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr67" id="r67">
+                                            <label class="form-check-label" for="r67">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr68" id="r68">
+                                            <label class="form-check-label" for="r68">
+                                                d) 5
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica17()">Verifica</button>
+
+                                        <p id="output17"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 18</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Se  𝑥 − 3 = 1, qual è il valore di x?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr69" id="r69">
+                                            <label class="form-check-label" for="r69">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr70" id="r70">
+                                            <label class="form-check-label" for="r70">
+                                                b) 1
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr71" id="r71">
+                                            <label class="form-check-label" for="r71">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr72" id="r72">
+                                            <label class="form-check-label" for="r72">
+                                                d) 5
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica18()">Verifica</button>
+
+                                        <p id="output18"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 19</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto vale 𝑥 se 4 * 𝑥 = 8?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr73" id="r73">
+                                            <label class="form-check-label" for="r73">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr74" id="r74">
+                                            <label class="form-check-label" for="r74">
+                                                b) 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr75" id="r75">
+                                            <label class="form-check-label" for="r75">
+                                                c) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr76" id="r76">
+                                            <label class="form-check-label" for="r76">
+                                                d) 5
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica19()">Verifica</button>
+
+                                        <p id="output19"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 20</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto fa 5 x 5?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr77" id="r77">
+                                            <label class="form-check-label" for="r77">
+                                                a) 10
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr78" id="r78">
+                                            <label class="form-check-label" for="r78">
+                                                b) 15
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr79" id="r79">
+                                            <label class="form-check-label" for="r79">
+                                                c) 20
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nr80 " id="r80">
+                                            <label class="form-check-label" for="r80">
+                                                d) 25
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica20()">Verifica</button>
+
+                                        <p id="output20"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <!--BUTTON TORNA SU-->
+
+                                <div class="tornaSu">
+                                    <a href ="#" id="tornaSuBtn"><button type="button" class="btn btn-warning text-light"><i class="fa-solid fa-arrow-up"></i></button></a>
+                                </div>
+
+                                <!--BUTTON TORNA SU-->
+
+
+
+
+
+                            </div> <!--tag div fine total card1-->
+
+
+                        </div> <!--TAG DIV FINE CLASS ESERCIZI1-->
+
+
+
+                    </div> <!--tag div chiusura accordion body1-->
+                </div> <!--TAG DIV CHIUSURA TAB ESERCIZI MATEMATICA-->
+            </div>
+            <!--FINE ACCORDION MATEMATICA-->
+            <!--INIZIO ACCORDION GEOMETRIA-->
+
+            <div class="accordion-item">
+
+                <!--TAG DIV APERTURA TAB ESERCIZI GEOMETRIA-->
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ESERCIZI DI GEOMETRIA
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <!--SEZIONE CARD ESERCIZI GEOMETRIA "*ALL'INTERNO DELL'ACCORDION BODY*"-->
+
+                        <div class="esercizi2">
+
+                            <div class="totalcard2">
+                                <!--CONTENITORE DI TUTTE LE CARD ESERCIZI 2-->
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 1</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto misura la somma degli angoli interni di un triangolo?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra1" id="r1a">
+                                            <label class="form-check-label" for="r1a">
+                                                a) 90°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra2" id="r2a">
+                                            <label class="form-check-label" for="r2a">
+                                                b) 180°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra3" id="r3a">
+                                            <label class="form-check-label" for="r3a">
+                                                c) 360°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra4" id="r4a">
+                                            <label class="form-check-label" for="r4a">
+                                                d) 270°
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica1a()">Verifica</button>
+
+                                        <p id="output1a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 2</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Un quadrato ha 4 lati. Qual è il perimetro se ogni lato misura 3 cm?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra5" id="r5a">
+                                            <label class="form-check-label" for="r5a">
+                                                a) 9 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra6" id="r6a">
+                                            <label class="form-check-label" for="r6a">
+                                                b) 12 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra7" id="r7a">
+                                            <label class="form-check-label" for="r7a">
+                                                c) 15 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra8" id="r8a">
+                                            <label class="form-check-label" for="r8a">
+                                                d) 6 cm
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica2a()">Verifica</button>
+
+                                        <p id="output2a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 3</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è la forma con 4 lati uguali e angoli retti?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra9" id="r9a">
+                                            <label class="form-check-label" for="r9a">
+                                                a) Rettangolo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra10" id="r10a">
+                                            <label class="form-check-label" for="r10a">
+                                                b) Quadrato
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra11" id="r11a">
+                                            <label class="form-check-label" for="r11a">
+                                                c) Triangolo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra12" id="r12a">
+                                            <label class="form-check-label" for="r12a">
+                                                d) Cerchio
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica3a()">Verifica</button>
+
+                                        <p id="output3a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 4</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto misura un angolo retto?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra13" id="r13a">
+                                            <label class="form-check-label" for="r13a">
+                                                a) 45°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra14" id="r14a">
+                                            <label class="form-check-label" for="r14a">
+                                                b) 90°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra15" id="r15a">
+                                            <label class="form-check-label" for="r15a">
+                                                c) 60°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra16" id="r16a">
+                                            <label class="form-check-label" for="r16a">
+                                                d) 120°
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica4a()">Verifica</button>
+
+                                        <p id="output4a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 5</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Un triangolo con due lati uguali si chiama:
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra17" id="r17a">
+                                            <label class="form-check-label" for="r17a">
+                                                a) Isoscele
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra18" id="r18a">
+                                            <label class="form-check-label" for="r18a">
+                                                b) Equilatero
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra19" id="r19a">
+                                            <label class="form-check-label" for="r19a">
+                                                c) Scaleno
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra20" id="r20a">
+                                            <label class="form-check-label" for="r20a">
+                                                d) Rettangolo
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica5a()">Verifica</button>
+
+                                        <p id="output5a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 6</h4>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto misura un angolo piatto?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra21" id="r21a">
+                                            <label class="form-check-label" for="r21a">
+                                                a) 90°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra22" id="r22a">
+                                            <label class="form-check-label" for="r22a">
+                                                b) 180°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra23" id="r23a">
+                                            <label class="form-check-label" for="r23a">
+                                                c) 360°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra24" id="r24a">
+                                            <label class="form-check-label" for="r24a">
+                                                d) 45°
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica6a()">Verifica</button>
+
+                                        <p id="output6a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 7</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto misura un angolo piatto?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra25" id="r25a">
+                                            <label class="form-check-label" for="r25a">
+                                                a) 90°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra26" id="r26a">
+                                            <label class="form-check-label" for="r26a">
+                                                b) 180°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra27" id="r27a">
+                                            <label class="form-check-label" for="r27a">
+                                                c) 360°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra28" id="r28a">
+                                            <label class="form-check-label" for="r28a">
+                                                d) 45°
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica7a()">Verifica</button>
+
+                                        <p id="output7a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 8</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto misura un angolo piatto?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra29" id="r29a">
+                                            <label class="form-check-label" for="r29a">
+                                                a) 90°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra30" id="r30a">
+                                            <label class="form-check-label" for="r30a">
+                                                b) 180°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra31" id="r31a">
+                                            <label class="form-check-label" for="r31a">
+                                                c) 360°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra32" id="r32a">
+                                            <label class="form-check-label" for="r32a">
+                                                d) 45°
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica8a()">Verifica</button>
+
+                                        <p id="output8a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 9</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Una figura con 3 lati si chiama :
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra33" id="r33a">
+                                            <label class="form-check-label" for="r33a">
+                                                a) Rettangolo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra34" id="r34a">
+                                            <label class="form-check-label" for="r34a">
+                                                b) Triangolo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra35" id="r35a">
+                                            <label class="form-check-label" for="r35a">
+                                                c) Quadrato
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra36" id="r36a">
+                                            <label class="form-check-label" for="r36a">
+                                                d) Cerchio
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica9a()">Verifica</button>
+
+                                        <p id="output9a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 10</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Un poligono con 5 lati si chiama:
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra37" id="r37a">
+                                            <label class="form-check-label" for="r37a">
+                                                a) Pentagono
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra38" id="r38a">
+                                            <label class="form-check-label" for="r38a">
+                                                b) Esagono
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra39" id="r39a">
+                                            <label class="form-check-label" for="r39a">
+                                                c) Ottagono
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra40" id="r40a">
+                                            <label class="form-check-label" for="r40a">
+                                                d) Decagono
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica10a()">Verifica</button>
+
+                                        <p id="output10a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 11</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanti lati ha un quadrato?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra41" id="r41a">
+                                            <label class="form-check-label" for="r41a">
+                                                a) 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra42" id="r42a">
+                                            <label class="form-check-label" for="r42a">
+                                                b) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra43" id="r43a">
+                                            <label class="form-check-label" for="r43a">
+                                                c) 5
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra44" id="r44a">
+                                            <label class="form-check-label" for="r44a">
+                                                d) 3
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica11a()">Verifica</button>
+
+                                        <p id="output11a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 12</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Una figura con 4 lati uguali si chiama:
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra45" id="r45a">
+                                            <label class="form-check-label" for="r45a">
+                                                a) Rettangolo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra46" id="r46a">
+                                            <label class="form-check-label" for="r46a">
+                                                b) Quadrato
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra47" id="r47a">
+                                            <label class="form-check-label" for="r47a">
+                                                c) Triangolo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra48" id="r48a">
+                                            <label class="form-check-label" for="r48a">
+                                                d) Cerchio
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica12a()">Verifica</button>
+
+                                        <p id="output12a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 13</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è la lunghezza di ciascun lato di un quadrato con perimetro di 20 cm?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra49" id="r49a">
+                                            <label class="form-check-label" for="r49a">
+                                                a) 4 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra50" id="r50a">
+                                            <label class="form-check-label" for="r50a">
+                                                b) 5 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra51" id="r51a">
+                                            <label class="form-check-label" for="r51a">
+                                                c) 6 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra52" id="r52a">
+                                            <label class="form-check-label" for="r52a">
+                                                d) 8 cm
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica13a()">Verifica</button>
+
+                                        <p id="output13a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 14</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanto misura un angolo giro?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra53" id="r53a">
+                                            <label class="form-check-label" for="r53a">
+                                                a) 180°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra54" id="r54a">
+                                            <label class="form-check-label" for="r54a">
+                                                b) 270°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra55" id="r55a">
+                                            <label class="form-check-label" for="r55a">
+                                                c) 360°
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra56" id="r56a">
+                                            <label class="form-check-label" for="r56a">
+                                                d) 90°
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica14a()">Verifica</button>
+
+                                        <p id="output14a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 15</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Un rettangolo ha due lati lunghi 6 cm e due lati corti di 3 cm. Qual è il perimetro?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra57" id="r57a">
+                                            <label class="form-check-label" for="r57a">
+                                                a) 18 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra58" id="r58a">
+                                            <label class="form-check-label" for="r58a">
+                                                b) 24 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra59" id="r59a">
+                                            <label class="form-check-label" for="r59a">
+                                                c) 20 cm
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra60" id="r60a">
+                                            <label class="form-check-label" for="r60a">
+                                                d) 22 cm
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica15a()">Verifica</button>
+
+                                        <p id="output15a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 16</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanti angoli ha un pentagono?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra61" id="r61a">
+                                            <label class="form-check-label" for="r61a">
+                                                a) 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra62" id="r62a">
+                                            <label class="form-check-label" for="r62a">
+                                                b) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra63" id="r63a">
+                                            <label class="form-check-label" for="r63a">
+                                                c) 5
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="r64a">
+                                            <label class="form-check-label" for="r64a">
+                                                d) 6
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica16a()">Verifica</button>
+
+                                        <p id="output16a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 17</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Un triangolo con tutti gli angoli uguali si chiama:
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra65" id="r65a">
+                                            <label class="form-check-label" for="r65a">
+                                                a) Scaleno
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra66" id="r66a">
+                                            <label class="form-check-label" for="r66a">
+                                                b) Isoscele
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra67" id="r67a">
+                                            <label class="form-check-label" for="r67a">
+                                                c) Equilatero
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra68" id="r68a">
+                                            <label class="form-check-label" for="r68a">
+                                                d) Rettangolo
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica17a()">Verifica</button>
+
+                                        <p id="output17a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 18</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è la forma di un oggetto con un solo lato che non ha angoli?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra69" id="r69a">
+                                            <label class="form-check-label" for="r69a">
+                                                a) Triangolo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra70" id="r70a">
+                                            <label class="form-check-label" for="r70a">
+                                                b) Rettangolo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra71" id="r71a">
+                                            <label class="form-check-label" for="r71a">
+                                                c) Quadrato
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra72" id="r72a">
+                                            <label class="form-check-label" for="r72a">
+                                                d) Cerchio
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica18a()">Verifica</button>
+
+                                        <p id="output18a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 19</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Qual è l'area di un rettangolo con lunghezza di 7 cm e larghezza di 3 cm?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra73" id="r73a">
+                                            <label class="form-check-label" for="r73a">
+                                                a) 10 cm²
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra74" id="r74a">
+                                            <label class="form-check-label" for="r74a">
+                                                b) 21 cm²
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra75" id="r75a">
+                                            <label class="form-check-label" for="r75a">
+                                                c) 14 cm²
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra76" id="r76a">
+                                            <label class="form-check-label" for="r76a">
+                                                d) 24 cm²
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica19a()">Verifica</button>
+
+                                        <p id="output19a"></p>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4> Esercizio 20</h4>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Quanti lati ha un esagono?
+                                        </h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra77" id="r77a">
+                                            <label class="form-check-label" for="r77a">
+                                                a) 4
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra78" id="r78a">
+                                            <label class="form-check-label" for="r78a">
+                                                b) 5
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra79" id="r79a">
+                                            <label class="form-check-label" for="r79a">
+                                                c) 6
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="nra80" id="r80a">
+                                            <label class="form-check-label" for="r80a">
+                                                d) 8
+                                            </label>
+                                        </div>
+
+                                        <br />
+
+                                        <button type="button" class="btn btn-warning" onclick="verifica20a()">Verifica</button>
+
+                                        <p id="output20a"></p>
+                                    </div>
+                                </div>
+
+
+                                <br />
+
+                                <!--BUTTON TORNA SU-->
+                                <div class="tornaSu">
+                                    <a href="#" id="tornaSuBtn"><button type="button" class="btn btn-warning text-light"><i class="fa-solid fa-arrow-up"></i></button></a>
+                                </div>
+
+                                <!--BUTTON TORNA SU-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div> <!-- TAG DIV FINE TOTAL CARD 2-->
+
+
+
+                        </div> <!--TAG DIV FINE CLASS ESERCIZI2-->
+
+
+
+                    </div>
+                </div>
+            </div> <!--TAG DIV CHIUSURA TAB ESERCIZI GEOMETRIA-->
+            <!--FINE ACCORDION GEOMETRIA-->
+
+
+            <div class="accordion-item">
+                <!--TAG DIV APERTURA SOLUZIONI-->
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        SOLUZIONI
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Mi auguro che tu non stia facendo il furbo o la furba... &#128527
+                        <br />
+                        <br />
+
+                        <!--parte da cancellare se non funziona-->
+                        <!-- Button trigger modal/INIZIO MODALE  -->
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Verifica
+                        </button>
+
+                        <!-- Modal parte 2 -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" id="mdh">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Soluzioni Esercizi di Matematica</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" data-bs-toggle="collapse" href="#sol1" role="button" aria-expanded="false" aria-controls="collapseOne">
+                                                    Soluzione 1
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol1">
+                                                <div class="card card-body">
+                                                    Risposta corretta : A
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol2" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 2
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol2">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol3" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 3
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol3">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol4" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 4
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol4">
+                                                <div class="card card-body">
+                                                    Risposta corretta : A
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol5" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 5
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol5">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol6" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 6
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol6">
+                                                <div class="card card-body">
+                                                    Risposta corretta : A
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol7" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 7
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol7">
+                                                <div class="card card-body">
+                                                    Risposta corretta : A
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol8" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 8
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol8">
+                                                <div class="card card-body">
+                                                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol9" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 9
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol9">
+                                                <div class="card card-body">
+                                                    Risposta corretta : D
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol10" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 10
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol10">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol11" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 11
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol11">
+                                                <div class="card card-body">
+                                                    Risposta corretta : A
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol12" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 12
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol12">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol13" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 13
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol13">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol14" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 14
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol14">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol15" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 15
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol15">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol16" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 16
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol16">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol17" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 17
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol17">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol18" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 18
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol18">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol19" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 19
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol19">
+                                                <div class="card card-body">
+                                                    Risposta corretta : A
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol20" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 20
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol20">
+                                                <div class="card card-body">
+                                                    Risposta corretta : D
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="modal-header2">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel2">Soluzioni Geometria</h1>
+                                        </div>
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#1a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 1
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="1a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol2a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 2
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol2a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol3a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 3
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol3a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol4a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 4
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol4a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : A
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol5a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 5
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol5a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol6a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 6
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol6a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol7a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 7
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol7a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol8a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 8
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol8a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : A
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol9a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 9
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol9a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol10a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 10
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol10a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol11a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 11
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol11a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol12a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 12
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol12a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol13a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 13
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol13">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol14a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 14
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol14a">
+                                                <div class="card card-body">
+                                                    SRisposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol15a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 15
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol15a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : D
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol16a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 16
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol16a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol17a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 17
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol17a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol18a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 18
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol18a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol19a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 19
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol19a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : B
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <br />
+
+                                        <div>
+
+                                            <p class=" gap-1">
+                                                <a class="accordion-button btn btn-warning" style="border:groove" type="button" data-bs-toggle="collapse" href="#sol20a" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Soluzione 20
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="sol20a">
+                                                <div class="card card-body">
+                                                    Risposta corretta : C
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tornaSu">
+                                            <a href="#mdh" id="tornaSuBtn"><button type="button" class="btn btn-warning text-light"><i class="fa-solid fa-arrow-up"></i></button></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Chiudi</button>
+                                        <!--2nd button modal in caso serva<button type="button" class="btn btn-warning">Save changes</button-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <!--parte da cancellare se non funziona-->
+
+                        </div> <!--TAG DIV CHIUSURA ACCORDION SOLUZIONI-->
+                    </div>
+            </div>
+
+
+        </div> <!-- TAG DIV CHIUSURA ACCORDION CONTAINER GENERALE-->
+
+        <br />
+        <hr />
+        <br />
+
+
+    </div> <!--DIV TAG CHIUSURA CONTAINER-->
+    <!--CACCIA AL TESORO-->
+    <div class="container mt-10">
+        <div class="card" id="containerCacciaTesoro" style="max-width: 700px; margin: auto;">
+            <div class="card-body text-center">
+                <!-- Image section -->
+                <h3>Caccia al Tesoro</h3>
+                <h5>In questo entusiasmante quiz, i dovrai affrontare una serie di enigmi matematici per prendere il tesoro nascosto.</h5>
+                <div id="image-container" class="mb-3">
+                    <img id="quiz-image" src="img/map1.jpg" alt="Quiz Image" class="img-fluid">
+                </div>
+
+                <!-- Start button outside the quiz container to start the quiz -->
+                <button id="start-button" onclick="startQuiz()" class="btn btn-warning mb-3">Inizia</button>
+
+                <!-- Initially hidden quiz container -->
+                <div id="quiz-container" hidden>
+                    <h5 class="card-title"></h5>
+                    <!-- Question section -->
+                    <div id="question" class="mb-3">Question goes here</div>
+
+                    <!-- Answer options -->
+                    <div id="options">
+                        <label class="d-block mb-2">
+                            <input type="radio" name="answer" value="A" onclick="checkAnswer()"> <span id="labelA">Option A</span>
+                        </label>
+                        <label class="d-block mb-2">
+                            <input type="radio" name="answer" value="B" onclick="checkAnswer()"> <span id="labelB">Option B</span>
+                        </label>
+                        <label class="d-block mb-2">
+                            <input type="radio" name="answer" value="C" onclick="checkAnswer()"> <span id="labelC">Option C</span>
+                        </label>
+                    </div>
+
+                    <!-- Message output area -->
+                    <div id="message-output" class="font-weight-bold mt-3"></div>
+
+                    <!-- Restart button -->
+                    <button onclick="resetQuiz()" class="btn btn-warning mt-3">Restart Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <br />
+    <!--Footer-->
+    <div class="footer" container id="footer">
+        <div class="container container" id="contatti">
+            <h4>Contatti</h4>
+            <address>
+                Indirizzo: Via Non lo so, 25 - Roma<br>
+                Telefono: 0989800898<br>
+                Email: nonloso@homepage.it <br />
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </address>
+        </div>
+        <p>
+            &copy; 2024 team Giuliani:
+            Tutti i diritti riservati.
+        </p>
+        <div class="container container" id="Linksviluppatori">
+            <a href="sviluppatori.html"  <button type="button" class="btn btn-info text-light">Gli Sviluppatori</button></a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

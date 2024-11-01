@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometria</title>
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha383-QWTKZyjpPEjISv5WaRU9OFeRpok3YctnYmDr5pNlyT2bRjXh0JMhjY3hW+ALEwIH"
+          crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/0e173647d3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha383-YvpcrYf0tY3lHB30NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N3jIeHz"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--link JavaScript-->
+    <script src="js/geometry.js"></script>
+    <!--Stile CSS-->
+    <link rel="stylesheet" href="css/styleSheet.css">
+    <style>
+        body {
+            background-image: url(img/sfondo2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+   
+    </style>
+</head>
+    <body>
+        <!--Navbar iniziale-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"
+                    >Math&GeometryHelper</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="calculator.html">Calcolatrice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="geometry.html">Geometria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="esercizi.html">Esercizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bibliotecaDigitale.html">Biblioteca Digitale</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Titolo Pagina-->
+        <div class="container" id="titoloFigureGeometriche">
+            <div class="content-box">
+                <h1>Calcola Area e Perimetro con noi!</h1>
+                <br />
+                <p id="descrizioneCalcoliGeometrici">Inserisci i dati e calcola "Area" e "Perimetro" delle seguenti Figure:</p>
+            </div>
+            <br />
+        </div>
+        <!--Card Figure-->
+        <div class="container mt-4" id="cardContainer">
+            <!--Prima riga-->
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                    <!--Card Cerchio-->
+                    <div class="col-lg-3 mb-3 mb-sm-0">
+                        <div class="card h-100 shadow" id="cerchio">
+                            <img src="img/cerchio.png" class="w-50 mx-auto my-3" alt="cerchio" />
+                            <div class="card-body">
+                                <h5 class="card-title">Cerchio</h5>
+                                <p class="card-text">
+                                    Il cerchio è una figura piana formata da tutti i
+                                    punti equidistanti da un punto fisso detto
+                                    centro. Il raggio è la distanza dal centro a un
+                                    punto del cerchio, e il diametro è il doppio del
+                                    raggio. La circonferenza è la linea che delimita
+                                    il cerchio.
+                                    <br />
+                                    <br />
+                                    <strong>Formule:</strong>
+                                    <br />
+                                    <strong>Area:</strong> A=πr^2
+                                    <br />
+                                    <strong>Circonferenza:</strong> C=2πr
+                                </p>
+                                
+                            </div>
+                            <ul class="list-group list-group-flush p-4">
+                                <li class="list-group-item">Inserisci "r"</li>
+                                    <input type="number" id="raggioCerchio" />
+                            </ul>
+                            <div class="card-body">
+                                <button
+                                    type="button"
+                                    class="btn btn-warning "
+                                    onclick="calcolaCerchio()"
+                                >
+                                    Calcola
+                                </button>
+                                <br />
+                                <br />
+                                <p><strong>Area:</strong> <p id="calcoloAreaCerchio"></p></p>
+                                <p><strong>Perimetro:</strong><p id="calcoloPerimetroCerchio""></p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Quadrato-->
+                    <div class="col-lg-3 mb-3 mb-sm-0">
+                        <div class="card h-100" id="quadrato">
+                            <img src="img/quadrato.png" class="w-50 mx-auto my-3" alt="qadrato" />
+                            <div class="card-body">
+                                <h5 class="card-title">Quadrato</h5>
+                                <p class="card-text">
+                                    Il quadrato è un poligono regolare con quattro
+                                    lati uguali e quattro angoli retti (90°). Le sue
+                                    diagonali sono uguali, si intersecano
+                                    perpendicolarmente e dividono il quadrato in
+                                    quattro triangoli rettangoli isosceli.
+                                    <br />
+                                    <br />
+                                    <strong>Formule:</strong>
+                                    <br />
+                                    <strong>Area:</strong> A=l*2
+                                    <br />
+                                    <strong>Perimetro:</strong> P=4*l (dove l è la
+                                    lunghezza del lato del quadrato.)
+                                    <br />
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush p-4">
+                                <li class="list-group-item">Inserisci "l"</li>
+                                    <input type="number" id="latoQuadrato" />
+                            </ul>
+                            <div class="card-body">
+                                <button
+                                    type="button"
+                                    class="btn btn-warning "
+                                    onclick="calcolaQuadrato()"
+                                >
+                                    Calcola
+                                </button>
+                                <br />
+                                <br />
+                                <p><strong>Area:</strong><p id="calcoloAreaQuadrato"></p></p>
+                                <p><strong>Perimetro:</strong><p id="calcoloPerimetroQuadrato"></p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Rettangolo-->
+                    <div class="col-lg-3 mb-3 mb-sm-0">
+                        <div class="card h-100 shadow" id="rettangolo">
+                            <img src="img/rettangolo.png" class="w-50 mx-auto my-3" alt="rettangolo" />
+                            <div class="card-body">
+                                <h5 class="card-title">Rettangolo</h5>
+                                <p class="card-text">
+                                    Il rettangolo è un quadrilatero con quattro
+                                    angoli retti (90°) e i lati opposti paralleli e
+                                    di uguale lunghezza. Le sue diagonali sono
+                                    uguali e si intersecano a metà.
+                                    <br />
+                                    <br />
+                                    <strong>Formule:</strong>
+                                    <br />
+                                    <strong>Area:</strong> A=b*h
+                                    <br />
+                                    <strong>Perimetro:</strong> P=2(b+h) (dove b è
+                                    la base e h l'altezza del rettangolo.)
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush p-4">
+                                <li class="list-group-item">Inserisci "h"</li>
+                                    <input type="number" id="altezzaRettangolo" />
+                                <li class="list-group-item">Inserisci "b"</li>
+                                    <input type="number" id="baseRettangolo" />
+                            </ul>
+                            <div class="card-body">
+                                <button
+                                    type="button"
+                                    class="btn btn-warning "
+                                    onclick="calcolaRettangolo()"
+                                >
+                                    Calcola
+                                </button>
+                                <br />
+                                <br />
+                                <p><strong>Area:</strong><p id="calcoloAreaRettangolo"></p></p>
+                                <p><strong>Perimetro:</strong><p id="calcoloPerimetroRettangolo"></p></p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!--Seconda riga-->
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-2 justify-content-center">
+                    <!--Card Triangolo-->
+                    <div class="col-lg-3 mb-3 mb-sm-0">
+                        <div class="card h-100 shadow" id="triangolo">
+                            <img src="img/triangolo.png" class="w-50 mx-auto my-3" alt="triangolo" />
+                            <div class="card-body">
+                                <h5 class="card-title">Triangolo</h5>
+                                <p class="card-text">
+                                    Il triangolo è un poligono con tre lati e tre
+                                    angoli, la somma dei quali è sempre 180°. Si
+                                    distingue in base alla lunghezza dei lati
+                                    (equilatero, isoscele, scaleno) o all’ampiezza
+                                    degli angoli (acutangolo, rettangolo,
+                                    ottusangolo). Tipi principali Equilatero: tre
+                                    lati e tre angoli uguali. Isoscele: due lati
+                                    uguali e due angoli uguali. Scaleno: tre lati e
+                                    tre angoli diversi.
+                                    <br />
+                                    <br />
+                                    <strong>Formule:</strong>
+                                    <br />
+                                    <strong>Area:</strong> A= 2 b*h/2, (dove b è la
+                                    base e h l'altezza.)
+                                    <br />
+                                    <strong>Perimetro:</strong> b+a+c, (dove b,c,a,
+                                    sono i lati del triangolo)
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush p-4">
+                                <li class="list-group-item">Inserisci "h"</li>
+                                    <input type="number" id="altezzaTriangolo" />
+                                <li class="list-group-item">Inserisci "b"</li>
+                                    <input type="number" id="baseTriangolo" />
+                                <li class="list-group-item">Inserisci "a"</li>
+                                    <input type="number" id="latoATriangolo" />
+                                <li class="list-group-item">Inserisci "c"</li>
+                                    <input type="number" id="latoBTriangolo" />
+                            </ul>
+                            <div class="card-body">
+                                <br/>
+                                <button
+                                type="button"
+                                class="btn btn-warning "
+                                onclick="calcolaTriangolo()">Calcola
+                                </button>
+                                <br />
+                                <br />
+                                <p><strong>Area:</strong><p id="calcoloAreaTriangolo"></p></p>
+                                <p><strong>Perimetro:</strong><p id="calcoloPerimetroTriangolo"></p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Trapezio-->
+                    <div class="col-lg-3 mb-3 mb-sm-0">
+                        <div class="card h-100 shadow" id="trapezio">
+                            <img src="img/trapezio.png" class="w-50 mx-auto my-3" alt="trapezio" />
+                            <div class="card-body">
+                                <h5 class="card-title">Trapezio</h5>
+                                <p class="card-text">
+                                    l trapezio è un quadrilatero con due lati
+                                    opposti e paralleli, chiamati basi (base
+                                    maggiore e base minore), mentre gli altri due
+                                    lati sono detti obliqui. Esistono vari tipi di
+                                    trapezi: Trapezio rettangolo: ha due angoli
+                                    retti. Trapezio isoscele: ha i lati obliqui
+                                    uguali e gli angoli alla base uguali. Trapezio
+                                    scaleno: ha i lati e gli angoli tutti diversi.
+                                    <br />
+                                    <br />
+                                    <strong>Formule:</strong>
+                                    <br />
+                                    <strong>Area:</strong> A=(B+b)*h/2
+                                    <br />
+                                    <strong>Perimetro:</strong>
+                                    P= (B+b+l1+l2) (dove B e b sono le basi, h è
+                                    l'altezza, e l1 e l2 sono i lati obliqui.)
+                                </p>
+                            </div>
+                                <ul class="list-group list-group-flush p-4">
+                                    <li class="list-group-item">Inserisci "B"</li>
+                                        <input type="number" id="baseMaggioreTrapezio" />
+                                    <li class="list-group-item">Inserisci "b"</li>
+                                        <input type="number" id="baseMinoreTrapezio" />
+                                    <li class="list-group-item">Inserisci "h"</li>
+                                        <input type="number" id="altezzaTrapezio" />
+                                    <li class="list-group-item">Inserisci "l1"</li>
+                                        <input type="number" id="latoATrapezio" />
+                                    <li class="list-group-item">Inserisci "l2"</li>
+                                        <input type="number" id="latoBTrapezio" />
+                                </ul>
+                                <br/>
+                                <div class="card-body">
+                                    <br/>
+                                    <button
+                                    type="button"
+                                    class="btn btn-warning "
+                                    onclick="calcolaTrapezio()">Calcola
+                                    </button>
+                                    <br/>
+                                    <br />
+                                    <p><strong>Area:</strong><p id="calcoloAreaTrapezio"></p></p>
+                                    <p><strong>Perimetro:</strong><p id="calcoloPerimetroTrapezio"></p></p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer" container id="footer">
+            <div class="container" container id="contatti">
+                <h4>Contatti</h4>
+                <address>
+                    Indirizzo: Via Non lo so, 25 - Roma<br>
+                    Telefono: 0989800898<br>
+                    Email: nonloso@homepage.it <br />
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </address>
+            </div>
+            <div class="container " container id="Linksviluppatori">
+                
+                <a href="sviluppatori.html" <button type="button" class="btn btn-info text-light">Gli Sviluppatori</button></a>
+            </div>
+            <p>
+                &copy; 2024 team Giuliani:
+                Tutti i diritti riservati.
+            </p>
+        </div>
+    </body>
+</html>

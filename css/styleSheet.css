@@ -1,0 +1,257 @@
+﻿body {
+    background-image: url(img/sfondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* NAVBAR*/
+nav {
+    height: 150px;
+    font-size: 20px;
+}
+
+#navbarNav {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    color: black;
+}
+
+.navbar-brand:hover {
+    color: #0dcaf0;
+}
+
+.nav-link {
+    margin: 5px;
+    font-size: 22px;
+    color: white;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link:active {
+    color: rgb(255, 193, 7, 1);
+}
+/* HOMEPAGE*/
+#titoloHome {
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#anteprimaVideoLezioni {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+#anteprimaLinkEbook {
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#titoloHome h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#titoloHome p {
+    text-align: justify;
+}
+
+#cardAnteprimaHome .card {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: -3px 3px 4px;
+    justify-content: space-around;
+    height: 95%;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.placeholder-wave {
+    color: rgb(13, 202, 240);
+}
+
+/* PAGINA SVILUPPATORI*/
+#titoloSviluppatori .content-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 30px;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bi {
+    color: #0dcaf0;
+}
+
+/* PAGINA BIBLIOTECA*/
+#VideoLezione1 {
+    justify-content: center;
+    display: flex;
+}
+#VideoLezione2 {
+    justify-content: center;
+    display: flex;
+}
+#VideoLezione3 {
+    justify-content: center;
+    display: flex;
+}
+#VideoLezione4 {
+    justify-content: center;
+    display: flex;
+}
+#VideoLezione5 {
+    justify-content: center;
+    display: flex;
+}
+.accordion-button {
+    background-color: rgb(255, 193, 7, 0.5);
+    color: black;
+    text-align: center;
+    margin: 1px;
+    margin-color: rgb(255, 193, 7, 0.5);
+}
+
+#cardEbook {
+    margin: 20px;
+}
+
+#headerEbook {
+    background-color: rgb(255, 193, 7, 0.5);
+}
+#titoloBiblioteca {
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#bibliotecaDigitaleContainer {
+    margin-top: 20px;
+}
+#bibliotecaDigitaleContainer h3 {
+    text-align: center;
+}
+#containerEbooks h3 {
+    text-align: center;
+}
+
+/* CALCULATOR*/
+#titoloCalculator .content-box {
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-top: 30px;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+}
+
+/* ESERCIZI*/
+
+#titoloEsercizi {
+    text-align: center;
+}
+.tornaSu {
+    text-align: right;
+}
+
+#collapseOne {
+    background-color: rgb(255, 193, 7, 0.1);
+}
+
+#collapseTwo {
+    background-color: rgb(255, 193, 7, 0.1);
+}
+
+#collapseThree {
+    background-color: rgb(255, 193, 7, 0.1);
+}
+
+#containerCacciaTesoro {
+    background-color: rgb(255, 255, 255, 0.7);
+    margin: 0;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+}
+/* GEOMETRY*/
+
+#titoloFigureGeometriche .content-box {
+    background-color: rgb(255, 255, 255, 0.7);
+    margin-top: 30px;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+}
+#cerchio {
+    background-color: rgb(255, 255, 255, 1);
+    margin: 0;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+}
+#quadrato {
+    background-color: rgb(255, 255, 255, 1);
+    margin: 0;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+}
+#rettangolo {
+    background-color: rgb(255, 255, 255, 1);
+    margin: 0;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+}
+#triangolo {
+    background-color: rgb(255, 255, 255, 1);
+    margin-bottom: 30px;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+}
+#trapezio {
+    background-color: rgb(255, 255, 255, 1);
+    margin-bottom: 30px;
+    padding: 30px;
+    border: ridge;
+    border-radius: 10px;
+}
+
+/* FOOTER*/
+#footer {
+    margin-top: 15px;
+    background-color: rgb(255, 193, 7, 1);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+#footer a {
+    color: #0dcaf0;
+    padding: 10px;
+    font-size: 30px;
+}
+#footer p {
+    margin-top: 15px;
+}

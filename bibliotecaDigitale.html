@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e173647d3.js" crossorigin="anonymous"></script>
+    <script src="js/scriptYoutube.js"></script>
+    <link rel="stylesheet" href="css/styleSheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(img/sfondo2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <title>Biblioteca Digitale</title>
+
+
+</head>
+<body>
+    <!--Navbar iniziale-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Math&GeometryHelper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">Calcolatrice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="geometry.html">Geometria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="esercizi.html">Esercizi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bibliotecaDigitale.html">Biblioteca Digitale</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+        <!--Titolo e descrizione pagina-->
+        <div class="container" container id="titoloBiblioteca">
+            <h2>La Biblioteca Digitale</h2>
+            <h6>
+                La nostra Biblioteca Digitale è un’innovativa piattaforma educativa, dedicata a raccogliere le migliori risorse online per lo studio della matematica.
+                Al suo interno, troverete una vasta collezione di video lezioni di YouTube, accuratamente selezionate per offrire un apprendimento di qualità, accessibile a tutti e una lista di ebook per l'apprendimento.
+            </h6>
+        </div>
+
+
+
+        <!--sezione VIDEO-->
+
+        <div class="container" container id="bibliotecaDigitaleContainer">
+            <h3>Videolezioni</h3>
+            <div class="accordion" id="accordionBiblioteca">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  Area e Perimetro quadrilateri comuni</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container" id="VideoLezione1">
+
+                                <div id="player1"></div> <!-- Primo player -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="accordionSecondoColore">Teorema di Pitagora e Prime Applicazioni</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container " id="VideoLezione2">
+
+                                <div id="player2"></div> <!-- Secondo player -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"> Teorema di Pitagora esercizi svolti</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container" id="VideoLezione3">
+
+                                <div id="player3"></div> <!-- Terzo player -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Algebra strutture algebriche</button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container" id="VideoLezione4">
+                                <div id="player4"></div> <!-- Quarto player -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"> Lezioni di Geometria</button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container" id="VideoLezione5">
+                                <div id="player5"></div> <!-- quinto player -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Script Youtube-->
+        <script>
+            // 1. Carichiamo il codice dell'API di YouTube in modo asincrono.
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            // 2. Creiamo i giocatori quando l'API è pronta
+            var player1, player2, player3, player4, player5;
+            function onYouTubeIframeAPIReady() {
+                player1 = new YT.Player('player1', {  // Primo video
+                    height: '360',
+                    width: '640',
+                    videoId: 'FXKWMl-tZ3M',
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+
+                player2 = new YT.Player('player2', {  // Secondo video
+                    height: '360',
+                    width: '640',
+                    videoId: '2JMj9_n8n0M?si=nf0qF5Ejxh6sGBII', // Sostituisci con l'ID del tuo secondo video
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+
+                });
+
+                player3 = new YT.Player('player3', {  // Terzo video
+                    height: '360',
+                    width: '640',
+                    videoId: 'mqAnkoptcKk?si=BwTjpHyuiqeceFAh', // Sostituisci con l'ID del tuo Terzo video
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+
+                });
+
+                player4 = new YT.Player('player4', {  // Quarto video
+                    height: '360',
+                    width: '640',
+                    videoId: 'OqCMIGX6hf0?si=PJwh80DHnVcm6-2Q', // Sostituisci con l'ID del tuo Quarto video
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+
+                });
+
+                player5 = new YT.Player('player5', {  // Quinto video
+                    height: '360',
+                    width: '640',
+                    videoId: 'CQ0xwIqm3WY?si=vpDrkW8tSoViM7p7', // Sostituisci con l'ID del tuo Quinto video
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+
+                });
+            }
+
+            // 3. Funzione chiamata quando il video è pronto per essere riprodotto
+            function onPlayerReady(event) {
+                // L'evento 'play' può essere abilitato se desideri avviare i video automaticamente
+            }
+
+            // 4. Funzione per la gestione dello stato dei video
+            var done = false;
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                    setTimeout(stopVideo, 6000);
+                    done = true;
+                }
+            }
+
+            // 5. Ferma il video
+            function stopVideo() {
+                player1.stopVideo();
+                player2.stopVideo();
+                player3.stopVideo();
+                player4.stopVideo();
+                player5.stopVideo();
+
+            }
+        </script>
+
+        <!--sezioneEbook-->
+
+
+        <div class="container" container id="containerEbooks">
+            <h3>Ebooks</h3>
+            <div class="card" id="cardEbook">
+                <div class="card-header" id="headerEbook">
+                    Matematica per le Prime
+                </div>
+                <div class="card-body">
+
+                    <p class="card-text">libro introduttivo alla Matematica</p>
+
+                    <a href="documents/Prima.pdf" target="_blank" class="btn btn-warning">Leggi ora</a>
+
+
+                </div>
+            </div>
+
+            <div class="card" id="cardEbook">
+                <div class="card-header" id="headerEbook">
+                    Matematica 2
+                </div>
+                <div class="card-body">
+
+                    <p class="card-text">libro di Matematica per le classi seconde</p>
+                    <a href="documents/Seconda.pdf" target="_blank" class="btn btn-warning">Leggi ora</a>
+                </div>
+            </div>
+            <div class="card" id="cardEbook">
+                <div class="card-header" id="headerEbook">
+                    Matematica 3
+                </div>
+                <div class="card-body">
+
+                    <p class="card-text">libro di Matematica per le classi terze</p>
+                    <a href="documents/Terza.pdf" target="_blank" class="btn btn-warning">Leggi ora</a>
+                </div>
+            </div>
+            <div class="card" id="cardEbook">
+                <div class="card-header" id="headerEbook">
+                    Matematica 4
+                </div>
+                <div class="card-body">
+
+                    <p class="card-text">libro di Matematica per le classi quarte</p>
+                    <a href="documents/Quarta.pdf" target="_blank" class="btn btn-warning">Leggi ora</a>
+                </div>
+            </div>
+            <div class="card" id="cardEbook">
+                <div class="card-header" id="headerEbook">
+                    Matematica 5
+                </div>
+                <div class="card-body">
+
+                    <p class="card-text">libro di Matematica per le classi al quinto anno</p>
+                    <a href="documents/Quinta.pdf" target="_blank" class="btn btn-warning">Leggi ora</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--Footer-->
+        <div class="footer" container id="footer">
+            <div class="container" container id="contatti">
+                <h4>Contatti</h4>
+                <address>
+                    Indirizzo: Via Non lo so, 25 - Roma<br>
+                    Telefono: 0989800898<br>
+                    Email: nonloso@homepage.it <br />
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://x.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                </address>
+            </div>
+
+
+            <div class="container " container id="Linksviluppatori">
+                <a href="sviluppatori.html"  <button type="button" class="btn btn-info text-light">Gli Sviluppatori</button></a>
+
+            </div>
+
+            <p>
+                &copy; 2024 team Giuliani:
+                Tutti i diritti riservati.
+            </p>
+        </div>
+</body>
+</body>
+</html>
